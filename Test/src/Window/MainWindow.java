@@ -15,7 +15,7 @@ import javax.swing.JFrame;
 public class MainWindow {
 	
 	private JFrame frame;
-	private JButton btnNewUser, btnButton;
+	private JButton btnNewUser, btnButton, btnClose;
 	private JMenu mFile, mUsers, mAbout, mSkills;
 	
 				// uruchomienie //
@@ -59,9 +59,23 @@ private void initialize() {
 	btnNewUser.setBounds(75,60,150,30);
 	frame.getContentPane().add(btnNewUser);
 	
+	//cos tu bedzie
+	
 	btnButton = new JButton("Jakis knefel");
 	btnButton.setBounds(75,100,150,30);
 	frame.getContentPane().add(btnButton);
+	
+	//zamkniecie apki
+	
+	btnClose = new JButton("Close");
+	btnClose.setBounds(75,140,150,30);
+	frame.getContentPane().add(btnClose);
+	btnClose.addActionListener(new ActionListener()){
+	public void actionPerformed(ActionEvent arg0){
+		System.exit(0);
+	}
+	
+	
 	
 } 
 }
