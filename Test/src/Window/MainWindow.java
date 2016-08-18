@@ -46,6 +46,13 @@ private void initialize() {
 	
 	frame.getContentPane().setLayout(null); 
 	
+	//gorne menu
+	JMenuBar menuBar = new JMenuBar();
+	frame.setJMenuBar(menuBar);
+	
+	mFile = new JMenu("File");		//File Menu
+	menuBar.add(mFile);
+	
 	//dodwanie nowego pracownika
 	
 	btnNewUser = new JButton("New User");
